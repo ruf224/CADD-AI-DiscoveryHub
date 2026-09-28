@@ -1,0 +1,17 @@
+{
+    "model_name": "Solubility Random Forest",
+    "dataset": "Delaney ESOL",
+    "fingerprint": "Morgan",
+    "radius": 2,
+    "n_bits": 2048,
+    "algorithm": "RandomForestRegressor",
+    "n_estimators": 300,
+    "random_state": 42,
+    "training_samples": 902,
+    "validation_samples": 113,
+    "test_samples": 113,
+    "validation_RMSE": 0.8672375313248434,
+    "validation_R2": 0.1779468957077357,
+    "test_RMSE": 0.7960656917837866,
+    "test_R2": 0.3975222276438162
+}
