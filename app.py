@@ -1,13 +1,12 @@
 
 import json
 from pathlib import Path
-
+import pickle
 import numpy as np
 import streamlit as st
 from rdkit import Chem
 from rdkit.Chem import AllChem, Descriptors, Lipinski, Crippen, rdMolDescriptors
 from rdkit.Chem.Draw import MolToImage
-import joblib
 
 
 # ============================================================
@@ -37,9 +36,8 @@ METADATA_PATH = BASE_DIR / "solubility_metadata.json"
 
 @st.cache_resource
 def load_model():
-
-    model = joblib.load(MODEL_PATH)
-
+    with open(MODEL_PATH, "rb") as f:
+        model = pickle.load(f)
     return model
 
 
