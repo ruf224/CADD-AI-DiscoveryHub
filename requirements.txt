@@ -1,5 +1,5 @@
 streamlit>=1.35,<2
-rdkit-pypi
+rdkit
 numpy<2
 pandas
 scikit-learn
