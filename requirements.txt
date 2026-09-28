@@ -1,7 +1,7 @@
-streamlit>=1.35,<2
-rdkit
-numpy<2
-pandas
-scikit-learn
-joblib
-Pillow
+streamlit==1.50.0
+rdkit==2025.9.1
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.5.2
+joblib==1.4.2
+Pillow==11.0.0
